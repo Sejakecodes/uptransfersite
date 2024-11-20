@@ -168,3 +168,18 @@ header ul li {
   background-color: rgb(211, 211, 211, 0.5);
   margin-bottom: 0;
 }
+/* features page begins here */
+.showcase-features {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -40px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  background-color: white;
+  
+}
