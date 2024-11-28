@@ -249,6 +249,34 @@ header ul li {
 .contant_box_404 {
   margin-top: -50px;
 }
+.sign {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .sign .col-lg-6 .card {
   text-align: left;
+  margin-left: -150px;
+}
+.sign .col-lg-6 .card .other-accounts {
+  margin: 10px 0;
+  text-align: center;
+  margin-left: -60px;
+}
+.sign .col-lg-6 .card .other-accounts li {
+  display: inline-block;
+
+  margin: 30px 0;
+}
+.sign .col-lg-6 .card .other-accounts li .bx {
+  background-color: lightgray;
+  border-radius: 50%;
+
+  font-size: 15px;
+  padding: 5px;
+}
+.sign .col-lg-6 .card .other-accounts li:hover .bx {
+  color: white;
+  padding: 10px;
 }

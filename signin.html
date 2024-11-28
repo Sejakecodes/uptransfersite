@@ -40,7 +40,7 @@
           <li>
             <a href="index.html" class="nav-link px-2">Home</a>
           </li>
-          <li><a href="#" class="nav-link px-2 link-secondary">Features</a></li>
+          <li><a href="#" class="nav-link px-2">Features</a></li>
           <li><a href="pricing.html" class="nav-link px-2">Pricing</a></li>
           <li><a href="#" class="nav-link px-2">Support</a></li>
           <li><a href="#" class="nav-link px-2">Docs</a></li>
@@ -50,27 +50,22 @@
           <button type="button" class="btn btn-outline-transparent me-2">
             Login
           </button>
-          <button type="button" class="btn btn-primary">Sign-up</button>
+          <a href="signup.html" type="button" class="btn btn-primary"
+            >Sign-up</a
+          >
         </div>
       </header>
     </div>
     <section class="showcase-features">
       <div class="container">
-        <h1>Transfer large files globally</h1>
+        <h1>SIGN IN</h1>
         <p>FAST RELIABLE SECURE</p>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
           dignissimos nostrum ut placeat harum facilis in sed autem sequi quo
           hic
         </p>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
-            Primary
-          </button>
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4">
-            Default
-          </button>
-        </div>
+
         <div class="files">
           <div class="circle">
             <div class="circle1">
@@ -80,10 +75,10 @@
         </div>
       </div>
     </section>
-    <section class="Sign">
-      <div class="px-4 py-5 my-5 text-center">
-        <h1 class="fs-4 fw-bold py-5">Safe Secure Storage</h1>
-        <div class="col-lg-6 mx-auto text-left">
+    <section class="sign">
+      <div class="px-4 py-5 my-5">
+        <h1 class="fs-4 fw-bold py-5 text-center">Safe Secure Storage</h1>
+        <div class="col-lg-6 mx-auto">
           <div
             class="card p-3"
             style="
@@ -94,16 +89,14 @@
           >
             <form class="row g-3">
               <div class="col-md-12">
-                <label
-                  for="validationDefault01"
-                  class="form-label text-left fw-semibold"
+                <label for="validationDefault01" class="form-label fw-semibold"
                   >First name</label
                 >
                 <input
                   type="text"
                   class="form-control"
                   id="validationDefault01"
-                  value="Mark"
+                  placeholder="Please enter username"
                   required
                 />
               </div>
@@ -117,7 +110,7 @@
                   type="text"
                   class="form-control"
                   id="validationDefault02"
-                  value="Otto"
+                  placeholder="Please enter Password"
                   required
                 />
               </div>
@@ -132,20 +125,30 @@
                     required
                   />
                   <label class="form-check-label" for="invalidCheck2">
-                    Agree to terms and conditions
+                    Remember me
                   </label>
                 </div>
               </div>
               <div class="col-12">
-                <button class="btn btn-primary" type="submit">
-                  Submit form
-                </button>
+                <div class="d-grid gap-2">
+                  <button class="btn btn-primary" type="button">Submit</button>
+                </div>
               </div>
             </form>
+            <div class="col-md-12">
+              <ul class="other-accounts">
+                <li><i class="bx bxl-google"></i></li>
+                <li><i class="bx bxl-facebook"></i></li>
+                <li><i class="bx bxl-github"></i></li>
+                <li><i class="bx bxl-discord"></i></li>
+              </ul>
+            </div>
           </div>
-          <small
+          <small class="text-center"
             >dont have an account?
-            <span class="text-primary"> <a href="">Sign Up </a></span></small
+            <span class="text-primary">
+              <a href="signup.html">Sign Up </a></span
+            ></small
           >
         </div>
       </div>
