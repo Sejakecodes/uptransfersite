@@ -95,9 +95,8 @@ body {
   height: 50px;
   width: 55px;
 }
-.menu_title .btn {
+.menu_items .btn {
   margin-top: -55px;
-  margin-left: 5px;
 }
 .menu_title .title {
   margin-left: 15px;
@@ -231,34 +230,54 @@ body {
   transition: all 0.3s ease 0.2s;
   z-index: -1;
 }
-.inner-content .card {
+.card {
   background-color: white;
   padding: 20px;
   margin-bottom: 50px;
 }
-.inner-content .col-md-3 .card .card-info .bx {
+.col-md-3 .card .card-info .bx {
   padding: 5px;
   background-color: rgb(255, 0, 0, 0.1);
   font-size: 35px;
   border-radius: 10px;
 }
-.inner-content .col-md-3 .card .progress,
+.col-md-3 .card .progress,
 .progress-bar {
   height: 10px;
 }
-.inner-content .col-md-3:nth-child(3) .card .card-info .bx {
+.col-md-3:nth-child(3) .card .card-info .bx {
   background-color: rgb(0, 0, 255, 0.1);
 }
-.inner-content .col-md-3:nth-child(4) .card .card-info .bx {
+.col-md-3:nth-child(4) .card .card-info .bx {
   background-color: rgb(255, 255, 0, 0.3);
 }
-.inner-content .col-md-3:nth-child(5) .card .card-info .bx {
+.col-md-3:nth-child(5) .card .card-info .bx {
   background-color: rgba(0, 157, 255, 0.3);
 }
-.inner-content .col-md-12 .table thead {
+.col-md-12 .table-header-info input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(211, 211, 211);
+  margin-left: 100px;
+}
+.col-md-12 .table-header-info input::placeholder {
+  font-size: 13px;
+  color: gray;
+  padding-left: 10px;
+}
+.col-md-12 .table-header-info .btn {
+  margin: 5px 10px;
+}
+
+.col-md-12 .table-header-info .dropdown-toggle::after {
+  content: "";
+  display: none;
+}
+.col-md-12 .table thead {
   border-top-left-radius: 10px;
   background-color: white;
 }
+
 /* Responsive */
 @media screen and (max-width: 1100px) {
   .navbar {

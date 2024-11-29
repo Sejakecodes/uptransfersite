@@ -32,11 +32,14 @@
 
       <div class="menu_container">
         <div class="menu_items">
-          <ul class="menu_item" style="margin-top: -30px">
+          <div class="col-12" style="padding: 0 40px;">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary text-left" id="add" type="button"><i class="bx bx-plus-circle"></i> Add New </button>
+            </div>
+          </div>
+          <ul class="menu_item" style="margin-top: -15px">
             <div class="menu_title flex">
-              <button class="btn btn-primary">
-                <i class="bx bx-plus-circle"></i>
-              </button>
+              
               <span class="line"></span>
             </div>
             <li class="item">
@@ -305,6 +308,42 @@
             <div class="card"></div>
           </div>
           <div class="col-md-12">
+            <div
+              class="d-flex table-header-info flex-wrap align-items-center justify-content-center justify-content-md-between mb-4"
+            >
+              <div class="col-md-3 mb-2 mb-md-0">
+               <h4>Recent Files </h4>
+                </nav>
+              </div>
+
+              <div class="col-md-5 text-end d-flex flex-wrap align-items-right justify-content-right ">
+                <input type="search" name="" id="" placeholder="Please Search Here">
+                
+                <div class="dropdown">
+                  <button class="btn t dropdown-toggle btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bx bx-sort"></i> Sort
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"> <i class="bx bx-sort-a-z"></i> A to Z</a></li>
+                    <li><a class="dropdown-item" href="#"> <i class="bx bx-sort-z-a"></i> Z to A</a></li>
+                  
+                  </ul>
+                </div>
+                <div class="dropdown">
+                  <button class="btn dropdown-toggle btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bx bx-grid-alt"></i> Layout
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"> <i class="bx bx-list-ul"></i>  List</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="bx bx-list-ol"></i>  Compact List</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="bx bx-grid-alt"></i>  Grid </a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
             <div class="card">
               <table class="table">
                 <thead>
@@ -317,19 +356,19 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row">1</th>
+                    <th scope="row"><input type="checkbox" name="" id=""></th>
                     <td>Mark</td>
                     <td>Otto</td>
                     <td>@mdo</td>
                   </tr>
                   <tr>
-                    <th scope="row">2</th>
+                    <th scope="row"><input type="checkbox" name="" id=""></th>
                     <td>Jacob</td>
-
+                    <td>Jacob</td>
                     <td>@fat</td>
                   </tr>
                   <tr>
-                    <th scope="row">3</th>
+                    <th scope="row"><input type="checkbox" name="" id=""></th>
                     <td>Larry the Bird</td>
                     <td>Thornton</td>
                     <td>@twitter</td>

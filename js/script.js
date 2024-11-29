@@ -15,11 +15,15 @@ const toggleLock = () => {
     searchbox.classList.replace("search_box", "search_close");
     innter_content.classList.replace("inner-content", "inner-content-close");
     sidebarLockBtn.classList.replace("bx-x", "bx-right-arrow-alt");
+    document.querySelector("#add").innerHTML =
+      "<i class='bx bx-plus-circle'></i>";
   } else {
     sidebar.classList.remove("hoverable");
     sidebarLockBtn.classList.replace("bx-right-arrow-alt", "bx-x");
     searchbox.classList.replace("search_close", "search_box");
     innter_content.classList.replace("inner-content-close", "inner-content");
+    document.querySelector("#add").innerHTML =
+      "<i class='bx bx-plus-circle'></i> Add New";
   }
 };
 
