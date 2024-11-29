@@ -3,6 +3,8 @@ const sidebar = document.querySelector(".sidebar");
 const sidebarOpenBtn = document.querySelector("#sidebar-open");
 const sidebarCloseBtn = document.querySelector("#sidebar-close");
 const sidebarLockBtn = document.querySelector("#lock-icon");
+const searchbox = document.querySelector(".search_box");
+const innter_content = document.querySelector(".inner-content");
 
 // Function to toggle the lock state of the sidebar
 const toggleLock = () => {
@@ -10,10 +12,14 @@ const toggleLock = () => {
   // If the sidebar is not locked
   if (!sidebar.classList.contains("locked")) {
     sidebar.classList.add("hoverable");
-    sidebarLockBtn.classList.replace("bx-lock-alt", "bx-lock-open-alt");
+    searchbox.classList.replace("search_box", "search_close");
+    innter_content.classList.replace("inner-content", "inner-content-close");
+    sidebarLockBtn.classList.replace("bx-x", "bx-right-arrow-alt");
   } else {
     sidebar.classList.remove("hoverable");
-    sidebarLockBtn.classList.replace("bx-lock-open-alt", "bx-lock-alt");
+    sidebarLockBtn.classList.replace("bx-right-arrow-alt", "bx-x");
+    searchbox.classList.replace("search_close", "search_box");
+    innter_content.classList.replace("inner-content-close", "inner-content");
   }
 };
 

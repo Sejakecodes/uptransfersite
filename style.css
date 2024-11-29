@@ -1,14 +1,18 @@
 /* Import Google font - Poppins */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: normal;
+
+  font-style: normal;
 }
 body {
   min-height: 100vh;
-  background: #eef5fe;
+  background: rgb(211, 211, 211, 0.3);
 }
 /* Pre css */
 .flex {
@@ -38,6 +42,7 @@ body {
   padding: 15px 10px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
   transition: all 0.4s ease;
+  z-index: 99;
 }
 .sidebar.close {
   width: calc(55px + 20px);
@@ -77,14 +82,22 @@ body {
   margin-top: 40px;
   overflow-y: auto;
   height: calc(100% - 82px);
+  margin-left: -30px;
 }
 .menu_container::-webkit-scrollbar {
   display: none;
+}
+.menu_items {
+  margin-top: 60px;
 }
 .menu_title {
   position: relative;
   height: 50px;
   width: 55px;
+}
+.menu_title .btn {
+  margin-top: -55px;
+  margin-left: 5px;
 }
 .menu_title .title {
   margin-left: 15px;
@@ -111,6 +124,7 @@ body {
 }
 .item {
   list-style: none;
+  font-size: 14px;
 }
 .link {
   text-decoration: none;
@@ -138,6 +152,7 @@ body {
 .sidebar_profile {
   padding-top: 15px;
   margin-top: 15px;
+  margin-left: 40px;
   gap: 15px;
   border-top: 2px solid rgba(0, 0, 0, 0.1);
 }
@@ -161,7 +176,7 @@ body {
   padding: 10px 20px;
   border-radius: 0 0 8px 8px;
   justify-content: space-between;
-  z-index: -1;
+  z-index: 1;
 }
 #sidebar-open {
   font-size: 30px;
@@ -187,7 +202,63 @@ body {
   width: 40px;
   margin-left: 20px;
 }
-
+.search_close {
+  height: 46px;
+  max-width: 500px;
+  width: 100%;
+  border: 1px solid #aaa;
+  outline: none;
+  border-radius: 8px;
+  padding: 0 15px;
+  font-size: 18px;
+  color: #333;
+  margin-left: 100px;
+  transition: all 0.3s ease 0.2s;
+}
+.inner-content {
+  width: calc(100% - 270px);
+  left: 18%;
+  top: 120px;
+  position: relative;
+  padding: 0 15px;
+}
+.inner-content-close {
+  width: calc(100% - 90px);
+  left: 5%;
+  top: 120px;
+  position: relative;
+  padding: 0 15px;
+  transition: all 0.3s ease 0.2s;
+  z-index: -1;
+}
+.inner-content .card {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+.inner-content .col-md-3 .card .card-info .bx {
+  padding: 5px;
+  background-color: rgb(255, 0, 0, 0.1);
+  font-size: 35px;
+  border-radius: 10px;
+}
+.inner-content .col-md-3 .card .progress,
+.progress-bar {
+  height: 10px;
+}
+.inner-content .col-md-3:nth-child(3) .card .card-info .bx {
+  background-color: rgb(0, 0, 255, 0.1);
+}
+.inner-content .col-md-3:nth-child(4) .card .card-info .bx {
+  background-color: rgb(255, 255, 0, 0.3);
+}
+.inner-content .col-md-3:nth-child(5) .card .card-info .bx {
+  background-color: rgba(0, 157, 255, 0.3);
+}
+.inner-content .col-md-12 .table thead {
+  border-top-left-radius: 10px;
+  background-color: white;
+}
 /* Responsive */
 @media screen and (max-width: 1100px) {
   .navbar {

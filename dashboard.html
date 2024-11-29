@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<!-- Coding by CodingNepal || www.codingnepalweb.com -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hoverable Sidebar Menu HTML CSS & JavaScript</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
     <!-- Boxicons CSS -->
     <link
@@ -22,76 +27,69 @@
         </span>
         <span class="logo_name">UpTransfer</span>
         <i class="bx bx-x" id="lock-icon" title="Unlock Sidebar"></i>
-        <i class="bx bx-x" id="sidebar-close"></i>
+        <i class="bx bx-right-arrow-alt" id="sidebar-close"></i>
       </div>
 
       <div class="menu_container">
         <div class="menu_items">
-          <ul class="menu_item">
+          <ul class="menu_item" style="margin-top: -30px">
             <div class="menu_title flex">
-              <span class="title">Dashboard</span>
+              <button class="btn btn-primary">
+                <i class="bx bx-plus-circle"></i>
+              </button>
               <span class="line"></span>
             </div>
             <li class="item">
               <a href="#" class="link flex">
-                <i class="bx bx-home-alt"></i>
-                <span>Overview</span>
+                <i class="bx bx-folder"></i>
+                <span>Folders</span>
               </a>
             </li>
             <li class="item">
               <a href="#" class="link flex">
                 <i class="bx bx-grid-alt"></i>
-                <span>All Projects</span>
+                <span>Documents</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" class="link flex">
+                <i class="bx bx-image"></i>
+                <span>Photos</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" class="link flex">
+                <i class="bx bx-video"></i>
+                <span>Videos</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" class="link flex">
+                <i class="bx bx-bug"></i>
+                <span>Spam</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" class="link flex">
+                <i class="bx bx-trash"></i>
+                <span>Trash</span>
               </a>
             </li>
           </ul>
-
-          <ul class="menu_item">
+          <ul class="menu_item border-top">
             <div class="menu_title flex">
-              <span class="title">Editor</span>
               <span class="line"></span>
             </div>
-            <li class="item">
-              <a href="#" class="link flex">
-                <i class="bx bxs-magic-wand"></i>
-                <span>Magic Build</span>
-              </a>
-            </li>
-            <li class="item">
-              <a href="#" class="link flex">
-                <i class="bx bx-folder"></i>
-                <span>New Projects</span>
-              </a>
-            </li>
             <li class="item">
               <a href="#" class="link flex">
                 <i class="bx bx-cloud-upload"></i>
-                <span>Upload New</span>
-              </a>
-            </li>
-          </ul>
-
-          <ul class="menu_item">
-            <div class="menu_title flex">
-              <span class="title">Setting</span>
-              <span class="line"></span>
-            </div>
-            <li class="item">
-              <a href="#" class="link flex">
-                <i class="bx bx-flag"></i>
-                <span>Notice Board</span>
+                <span>Cloud Storage</span>
               </a>
             </li>
             <li class="item">
               <a href="#" class="link flex">
-                <i class="bx bx-award"></i>
-                <span>Award</span>
-              </a>
-            </li>
-            <li class="item">
-              <a href="#" class="link flex">
-                <i class="bx bx-cog"></i>
-                <span>Setting</span>
+                <i class="bx bx-trash"></i>
+                <span>Trash</span>
               </a>
             </li>
           </ul>
@@ -117,6 +115,237 @@
         <img src="images/profile.jpg" alt="logo_img" />
       </span>
     </nav>
+    <section class="inner-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <header
+              class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between mb-4"
+            >
+              <div class="col-md-3 mb-2 mb-md-0">
+                <nav
+                  style="--bs-breadcrumb-divider: '>'"
+                  aria-label="breadcrumb"
+                >
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      Library
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+
+              <div class="col-md-3 text-end">
+                <button
+                  type="button"
+                  class="btn btn-outline-transparent btn-sm"
+                >
+                  <i class="bx bx-sort"></i> Sort
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-transparent btn-sm"
+                >
+                  <i class="bx bx-sort-down"></i>
+                  Style
+                </button>
+                <button type="button" class="btn btn-outline-primary btn-sm">
+                  View All
+                </button>
+              </div>
+            </header>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <div
+                class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between mb-4"
+              >
+                <div class="col-md-3 mb-2 mb-md-0">
+                 <div class="card-info">
+                  <i class="bx bx-folder"></i>
+                 </div>
+                </div>
+
+                <div class="col-md-3 text-end">
+                  </button>
+                  <button type="button" class="btn btn-transparent btn-sm">
+                    <i class='bx bx-dots-vertical-rounded'></i>
+                  </button>
+                </div>
+              </div>
+              <h4>Folders </h5>
+                <span class="file-number" style="font-weight: 500; padding: 5px 0;color: gray; font-size: 13px;">234 files</span>
+
+                <small style="margin-top: 25px;font-weight: 500; padding: 5px 0;color: gray;">128MB / 500MB</small>
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Basic example"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar w-75 bg-danger"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <div
+                class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between mb-4"
+              >
+                <div class="col-md-3 mb-2 mb-md-0">
+                 <div class="card-info">
+                  <i class="bx bx-image"></i>
+                 </div>
+                </div>
+
+                <div class="col-md-3 text-end">
+                  </button>
+                  <button type="button" class="btn btn-transparent btn-sm">
+                    <i class='bx bx-dots-vertical-rounded'></i>
+                  </button>
+                </div>
+              </div>
+              <h4>Photos </h5>
+                <span class="file-number" style="font-weight: 500; padding: 5px 0;color: gray; font-size: 13px;">234 files</span>
+
+                <small style="margin-top: 25px;font-weight: 500; padding: 5px 0;color: gray;">128MB / 500MB</small>
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Basic example"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar w-75"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card bg-white">
+              <div
+                class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between mb-4"
+              >
+                <div class="col-md-3 mb-2 mb-md-0">
+                 <div class="card-info">
+                  <i class="bx bxs-file-pdf"></i>
+                 </div>
+                </div>
+
+                <div class="col-md-3 text-end">
+                  </button>
+                  <button type="button" class="btn btn-transparent btn-sm">
+                    <i class='bx bx-dots-vertical-rounded'></i>
+                  </button>
+                </div>
+              </div>
+              <h4>Documents </h5>
+                <span class="file-number" style="font-weight: 500; padding: 5px 0;color: gray; font-size: 13px;">234 files</span>
+
+                <small style="margin-top: 25px;font-weight: 500; padding: 5px 0;color: gray;">128MB / 500MB</small>
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Basic example"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar w-75  bg-warning"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <div
+                class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between mb-4"
+              >
+                <div class="col-md-3 mb-2 mb-md-0">
+                 <div class="card-info">
+                  <i class="bx bxs-videos"></i>
+                 </div>
+                </div>
+
+                <div class="col-md-3 text-end">
+                  </button>
+                  <button type="button" class="btn btn-transparent btn-sm">
+                    <i class='bx bx-dots-vertical-rounded'></i>
+                  </button>
+                </div>
+              </div>
+              <h4>Videos </h5>
+                <span class="file-number" style="font-weight: 500; padding: 5px 0;color: gray; font-size: 13px;">234 files</span>
+
+                <small style="margin-top: 25px;font-weight: 500; padding: 5px 0;color: gray;">128MB / 500MB</small>
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Basic example"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar w-75 bg-info"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card"></div>
+          </div>
+          <div class="col-md-3">
+            <div class="card bg-white"></div>
+          </div>
+          <div class="col-md-3">
+            <div class="card"></div>
+          </div>
+          <div class="col-md-3">
+            <div class="card"></div>
+          </div>
+          <div class="col-md-12">
+            <div class="card">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry the Bird</td>
+                    <td>Thornton</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="./js/script.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
