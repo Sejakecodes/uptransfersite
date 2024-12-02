@@ -10,6 +10,11 @@
 
   font-style: normal;
 }
+/* .active {
+  background-color: #4070f4;
+  border-radius: 5px;
+  color: white;
+} */
 body {
   min-height: 100vh;
   background: rgb(211, 211, 211, 0.3);
@@ -276,6 +281,28 @@ body {
 .col-md-12 .table thead {
   border-top-left-radius: 10px;
   background-color: white;
+}
+.photos .col-md-2 {
+  margin: 1px;
+  padding: 0;
+}
+.photos .col-md-2 .card {
+  padding: 0;
+  cursor: pointer;
+}
+.photos .col-md-2 .overlay {
+  width: 202px;
+  height: 305px;
+  background-color: black;
+  opacity: 0.3;
+  position: absolute;
+  z-index: 11;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.photos .col-md-2:hover .overlay {
+  opacity: 0;
+  transition: all 0.3s ease;
 }
 
 /* Responsive */
