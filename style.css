@@ -180,7 +180,7 @@ body {
   padding: 10px 20px;
   border-radius: 0 0 8px 8px;
   justify-content: space-between;
-  z-index: 1;
+  z-index: 11;
 }
 #sidebar-open {
   font-size: 30px;
@@ -290,19 +290,32 @@ body {
   padding: 0;
   cursor: pointer;
 }
-.photos .col-md-2 .overlay {
-  width: 202px;
-  height: 305px;
+.photos .col-md-2 .card::before {
+  content: "";
+  width: 100%;
+  height: 100%;
   background-color: black;
   opacity: 0.3;
   position: absolute;
-  z-index: 11;
   border-radius: 5px;
   cursor: pointer;
 }
-.photos .col-md-2:hover .overlay {
+.photos .col-md-2:hover .card::before {
   opacity: 0;
   transition: all 0.3s ease;
+}
+.photos .col-md-2 .overlay .bx {
+  background-color: rgb(211, 211, 211, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  margin: 10px;
+  cursor: pointer;
+}
+.photos .col-md-2 .overlay .bx:hover {
+  background-color: gray;
+  color: white;
 }
 
 /* Responsive */
