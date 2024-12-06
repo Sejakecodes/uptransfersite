@@ -5,6 +5,8 @@ const sidebarCloseBtn = document.querySelector("#sidebar-close");
 const sidebarLockBtn = document.querySelector("#lock-icon");
 const searchbox = document.querySelector(".search_box");
 const innter_content = document.querySelector(".inner-content");
+const float_card = document.querySelector("#float-card");
+const float_menu_chKbox = document.querySelector("#checked");
 
 // Function to toggle the lock state of the sidebar
 const toggleLock = () => {
@@ -59,3 +61,14 @@ sidebar.addEventListener("mouseleave", hideSidebar);
 sidebar.addEventListener("mouseenter", showSidebar);
 sidebarOpenBtn.addEventListener("click", toggleSidebar);
 sidebarCloseBtn.addEventListener("click", toggleSidebar);
+
+const toggleFloatMenu = () => {
+  if (float_menu_chKbox.checked) {
+    float_card.classList.replace("float", "float-open"); // Show the menu
+  } else {
+    float_card.classList.replace("float-open", "float"); // Hide the menu
+  }
+};2
+
+// Add event listener to the checkbox
+float_menu_chKbox.addEventListener("change", toggleFloatMenu);

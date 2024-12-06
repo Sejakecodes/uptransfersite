@@ -317,13 +317,37 @@ body {
   background-color: gray;
   color: white;
 }
+/* documents page css begins here  */
+.documents .col-md-12.float .card {
+  padding: 5px;
+  position: absolute;
+  width: 1200px;
+  box-shadow: 5px 5px 5px 5px rgb(211, 211, 211, 0.1);
+  margin-top: -370px;
+  display: none;
+}
+.documents .col-md-12.float-open .card {
+  padding: 5px;
+  position: absolute;
+  width: 1200px;
+  box-shadow: 5px 5px 5px 5px rgb(211, 211, 211, 0.1);
+  margin-top: -370px;
+  display: block;
+}
+.documents .col-md-12 .table-items-edit-float-menu .edit-menu-items {
+  display: inline-block;
+  width: 8%;
+  padding-top: 10px;
+}
 
+/* documents page css ends here */
 /* Responsive */
 @media screen and (max-width: 1100px) {
   .navbar {
     left: 65%;
   }
 }
+
 @media screen and (max-width: 800px) {
   .sidebar {
     left: 0;
