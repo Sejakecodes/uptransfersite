@@ -10,9 +10,19 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/OZZTRANSFER(u).png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/OZZTRANSFER(u).png">
-    <link rel="shortcut icon" href="/favicon.ico">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/OZZTRANSFER(u).png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/OZZTRANSFER(u).png"
+    />
+    <link rel="shortcut icon" href="/favicon.ico" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -90,7 +100,7 @@
               box-shadow: 10px 10px 10px 10px rgb(211, 211, 211, 0.2);
             "
           >
-            <form class="row g-3">
+            <form class="row g-3" method="post" action="login.php">
               <div class="col-md-12">
                 <label for="validationDefault01" class="form-label fw-semibold"
                   >First name</label
@@ -100,7 +110,7 @@
                   class="form-control"
                   id="validationDefault01"
                   placeholder="Please enter username"
-                  required
+                  required name="username"
                 />
               </div>
               <div class="col-md-12">
@@ -114,7 +124,7 @@
                   class="form-control"
                   id="validationDefault02"
                   placeholder="Please enter Password"
-                  required
+                  required name="password"
                 />
               </div>
 
