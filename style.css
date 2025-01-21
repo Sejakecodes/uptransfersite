@@ -341,6 +341,42 @@ body {
 }
 
 /* documents page css ends here */
+
+/* share page starts here */
+.sharepoint .card .share-scanner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sharepoint .card .circle {
+  border-radius: 50%;
+  border: 1px solid rgb(211, 211, 211, 0.6);
+}
+.sharepoint .card .inner {
+  padding: 30px;
+  animation: ready 1s infinite ease-in-out;
+}
+.sharepoint .card .outer-outer-outer {
+  padding: 60px;
+  animation: ready 1s infinite 2s ease-in-out;
+}
+.sharepoint .card .outer-outer {
+  padding: 90px;
+  animation: ready 1s infinite 3s ease-in-out;
+}
+.sharepoint .card .outer {
+  padding: 120px;
+  animation: ready 1s infinite 2s ease-in-out;
+}
+
+@keyframes ready {
+  from {
+    border: 1px solid rgb(211, 211, 211, 0.6);
+  }
+  to {
+    border: 1px solid blue;
+  }
+}
 /* Responsive */
 @media screen and (max-width: 1100px) {
   .navbar {
